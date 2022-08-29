@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Agenda de Contatos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item-group *ngFor = "let item of contatos">
+        <ion-item lines="none" class="nome">Nome: {{item.nome}} </ion-item>
+        <ion-item lines="none" class="tel">Telefone: {{item.telefone}} </ion-item>
+        <ion-item lines="none" class="genero">Gênero: {{item.genero}} </ion-item>
+        <ion-item class="dtnasc">Data de Nascimento: {{item.dataNascimento}} </ion-item>
+    </ion-item-group>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="dark" (click)="irParaCadastroPage()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
