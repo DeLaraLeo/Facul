@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Contador de Truco
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item lines="none">
+    <ion-input type="number" min="1">{{pontos1}}</ion-input>
+  </ion-item>
+  <ion-item lines="none" class="center">
+   <ion-button size="large" shape="round" (click)="aumentar_3()">+3</ion-button>
+    <ion-button size="large" shape="round" (click)="diminuir_3()">-3</ion-button>
+    <ion-button size="large" shape="round" (click)="aumentar_1()">+1</ion-button>
+    <ion-button size="large" shape="round" (click)="diminuir_1()">-1</ion-button>
+  </ion-item>
+  <ion-button class="zerar" size="large" shape="round" expand="block" (click)="zerarJogador1()">Zerar</ion-button>
+</ion-content>
+<ion-content>
+  <ion-item lines="none">
+    <ion-input type="number" min="1">{{pontos2}}</ion-input>
+  </ion-item>
+  <ion-item lines="none" class="center">
+    <ion-button size="large" shape="round" (click)="aumentar3()">+3</ion-button>
+    <ion-button size="large" shape="round" (click)="diminuir3()">-3</ion-button>
+    <ion-button size="large" shape="round" (click)="aumentar1()">+1</ion-button>
+    <ion-button size="large" shape="round" (click)="diminuir1()">-1</ion-button>
+  </ion-item>
+    <ion-button class="zerar" size="large" shape="round" expand="block" (click)="zerarJogador2()">Zerar</ion-button>
+</ion-content>
